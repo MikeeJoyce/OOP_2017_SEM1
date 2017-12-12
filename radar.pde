@@ -25,7 +25,12 @@ class Radar extends GameObject
   {
     stroke(0, 22, 0);
     fill(0);
-    ellipse(x, y, radius * 2.5, radius * 2.5);
+    ellipse(x, y, radius * 2.5 , radius * 2.5);
+    stroke(0, 200, 0);
+    ellipse(x, y, radius * 2, radius * 2);
+    ellipse(x, y, radius * 1.5 , radius * 1.5);
+    ellipse(x, y, radius, radius);
+    ellipse(x, y, radius/2, radius/2);
     int trailLength = 20;
     float greenIntensity = 244 / (float)trailLength;
     for(int i = 0 ; i < trailLength ; i ++)

@@ -25,7 +25,7 @@ class Latitude extends GameObject
   void render()
   {
     stroke(0, 100, 0, 100);
-    fill(0, 244, 0, 20);
+    fill(0, 244, 0, 15);
     
     // first latitude
     x = width/2 - r*3;
@@ -33,7 +33,7 @@ class Latitude extends GameObject
     
     for(int i = 0; i < numTicks; i++)
     {
-      stroke(208);
+      stroke(208, 100);
       tickWidth = 10;
       if(i == (numTicks/2))
       {
@@ -51,7 +51,7 @@ class Latitude extends GameObject
     
     for(int i = 0; i < numTicks; i++)
     {
-      stroke(208);
+      stroke(208, 100);
       tickWidth = 10;
       if(i == (numTicks/2))
       {
@@ -60,8 +60,5 @@ class Latitude extends GameObject
       }
       line(x+(rectwidth/2) - (tickWidth/2), y+ (i * interval), x+(rectwidth/2) + (tickWidth/2), y+ (i * interval));
     }
-    
-    stroke(0, 244, 0);
-    line(width/2 - r, height/2, width/2 + r, height /2);
   }
 }
