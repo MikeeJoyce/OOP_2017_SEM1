@@ -19,7 +19,7 @@ class Retical extends GameObject
     noFill();
     ellipse(x, y, radius, radius); 
     noStroke();
-    fill(255, 0, 0, 100);
+    fill(0);
     ellipse(x, y, radius/3, radius/3); 
     stroke(0, 22, 0, 100);
     line(x-radius, y, x+radius, y);

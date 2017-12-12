@@ -40,6 +40,7 @@ class Latitude extends GameObject
         stroke(255, 0, 0);
         tickWidth = 50;
       }
+      //ticks along left latitude meter
       line(x+(rectwidth/2) - (tickWidth/2), y+ (i * interval), x+(rectwidth/2) + (tickWidth/2), y+ (i * interval));
     }
     
@@ -58,6 +59,7 @@ class Latitude extends GameObject
         stroke(255, 0, 0);
         tickWidth = 50;
       }
+      //ticks along right latitude meter
       line(x+(rectwidth/2) - (tickWidth/2), y+ (i * interval), x+(rectwidth/2) + (tickWidth/2), y+ (i * interval));
     }
   }

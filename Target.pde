@@ -1,6 +1,3 @@
-
-
-
 class Target extends GameObject
 {
   int r;
@@ -16,17 +13,22 @@ class Target extends GameObject
   
   void update()
   {
+    //if(mousePressed)
+      //shoot.play();
+
   }
   
   void render()
   {
     if(k == 1)
     {
-      fill(random(255), random(255),random(255), 100);
+      fill(255, 0,0, 200);
+      noStroke();
       ellipse(cx,cy,r,r);
-      fill(255);
-      text("POINTS: ", r, height - r*2.5);
-      text(point, width/2 - r*4,  height - 50);
+      fill(255,255,255,200);
+      textSize(30);
+      text("POINTS: ",r, height -r*9);
+      text(point,r+r, height -r*9);
     }
     
     if(mousePressed)

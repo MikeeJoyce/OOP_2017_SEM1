@@ -36,6 +36,7 @@ class Longitude extends GameObject
         stroke(255, 0, 0);
         tickHeight = 20;
       }
+      //ticks along the longitude meter
       line(x+(i * interval), y - (tickHeight), x + (i * interval), y + (tickHeight));
     } 
   }
